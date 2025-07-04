@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letecká akademie - Profesionální pilotní výcvik</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigace -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-plane"></i>
+                <span>Letecká akademie</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#domu">Domů</a></li>
+                <li><a href="#o-nas">O nás</a></li>
+                <li><a href="#sluzby">Služby</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Přepnout světlý/tmavý režim">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hlavní banner -->
+    <section id="domu" class="hero">
+        <div class="hero-content">
+            <h1>Vítejte v Letecké akademii</h1>
+            <p>Profesionální pilotní výcvik a letecké zážitky od roku 2009</p>
+            <div class="hero-buttons">
+                <a href="#sluzby" class="btn btn-primary">Naše služby</a>
+                <a href="#kontakt" class="btn btn-secondary">Kontakt</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="plane-animation">
+                <i class="fas fa-plane"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- O nás -->
+    <section id="o-nas" class="about about-modern">
+        <div class="container about-flex">
+            <div class="about-textblock">
+                <h2>O nás</h2>
+                <p>
+                    Letecká akademie vznikla v roce 2009 a v současnosti patříme mezi čelní letecké školy, se zaměřením na leteckou turistiku po Evropě. Připravujeme budoucí piloty <b>UL</b>, <b>LAPL</b> a <b>PPL</b> pro pohyb na mezinárodních letištích a samozřejmě pro létání přes hranice České republiky pod vedením zkušených instruktorů, pilotů dopravních letadel a instruktorů akrobacie.<br>
+                    Každoročně připravujeme skupinové výlety do zahraničí.
+                </p>
+                <p class="about-highlight">Pro zájemce nabízíme výcvik v Anglickém jazyce.</p>
+                <p>
+                    Kromě domovského letiště Airconfly v Miroslavi jsem schopni provádět pilotní výcvik na letištích, které jsou v přijatelných dojezdových vzdálenostech od bydliště žáka. Rovněž je možné provádět teoretickou výuku individuálně po dohodě.
+                </p>
+            </div>
+            <div class="about-mapblock">
+                <div class="about-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.964282019839!2d16.339898!3d48.9318292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712b22b27aaaaab%3A0xe635c59b9bf2e097!2sAir%20Con%20Miroslav!5e0!3m2!1scs!2scz!4v1680000000000!5m2!1scs!2scz" width="100%" height="640" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Služby -->
+    <section id="sluzby" class="services">
+        <div class="container">
+            <h2>Naše služby</h2>
+            <div class="services-grid services-modern">
+                <div class="service-card service-expandable" id="service-pilot" data-service="pilot">
+                    <div class="service-icon"><i class="fas fa-plane"></i></div>
+                    <h3>Pilotní výcvik</h3>
+                    <div class="service-detail" style="display:none;">
+                        Průkaz pilota ultralehkých letadel opravňuje k pilotáži aerodynamicky řízených dvoumístných letadel do celkové vzletové hmotnosti 450 kg. Jedná se o nejdostupnější a nejčastěji absolvovaný kurz.
+                    </div>
+                </div>
+                <div class="service-card service-expandable" data-service="teorie">
+                    <div class="service-icon"><i class="fas fa-book"></i></div>
+                    <h3>Teoretická příprava pilota</h3>
+                </div>
+                <div class="service-card service-expandable" data-service="vfr">
+                    <div class="service-icon"><i class="fas fa-tower-broadcast"></i></div>
+                    <h3>Výcvik – řízené lety VFR</h3>
+                </div>
+                <div class="service-card service-expandable" data-service="kondicni">
+                    <div class="service-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h3>Kondiční létání</h3>
+                </div>
+                <div class="service-card service-expandable" data-service="zaletavaci">
+                    <div class="service-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Práce zalétávacího pilota</h3>
+                </div>
+                <div class="service-card service-expandable" data-service="fotolety">
+                    <div class="service-icon"><i class="fas fa-camera"></i></div>
+                    <h3>Fotolety</h3>
+                </div>
+                <div class="service-card service-expandable" data-service="zazitkove">
+                    <div class="service-icon"><i class="fas fa-star"></i></div>
+                    <h3>Zážitkové akce</h3>
+                </div>
+                <div class="service-card service-expandable" data-service="vlekani">
+                    <div class="service-icon"><i class="fas fa-paper-plane"></i></div>
+                    <h3>Vlekání transparentů / vlekání větrňů</h3>
+                </div>
+                <div class="service-card service-expandable" data-service="roadshow">
+                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Roadshow pro firmy a obchodní partnery</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie -->
+    <section id="galerie" class="gallery">
+        <div class="container">
+            <h2>Galerie</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-plane"></i>
+                        <p>Letecké záběry</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-users"></i>
+                        <p>Naši studenti</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-landmark"></i>
+                        <p>Letiště</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-sun"></i>
+                        <p>Západ slunce</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="contact">
+        <div class="container">
+            <h2>Kontaktujte nás</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Kontaktní údaje</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresa</h4>
+                            <p>Letiště AirConFly<br>671 72 Miroslav</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+420 603 772 838</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>leteckaakademie@seznam.cz</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Vaše jméno" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Váš email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Váš telefon">
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service">
+                            <option value="">Vyberte službu</option>
+                            <option value="ppl">PPL výcvik</option>
+                            <option value="lapl">LAPL výcvik</option>
+                            <option value="ul">UL výcvik</option>
+                            <option value="experience">Zážitkový let</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Vaše zpráva" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Odeslat zprávu</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Letecká akademie</h4>
+                    <p>Profesionální pilotní výcvik a letecké zážitky od roku 2009.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Rychlé odkazy</h4>
+                    <ul>
+                        <li><a href="#domu">Domů</a></li>
+                        <li><a href="#o-nas">O nás</a></li>
+                        <li><a href="#sluzby">Služby</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Služby</h4>
+                    <ul>
+                        <li>PPL výcvik</li>
+                        <li>LAPL výcvik</li>
+                        <li>UL výcvik</li>
+                        <li>Zážitkové lety</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Letecká akademie - Stehlík Libor. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal pro detail služby -->
+    <div id="service-modal" class="service-modal" style="display:none;">
+        <div class="service-modal-backdrop"></div>
+        <div class="service-modal-content">
+            <button class="service-modal-close" aria-label="Zavřít detail">&times;</button>
+            <h3 id="service-modal-title"></h3>
+            <div id="service-modal-text"></div>
+            <div class="modal-scroll-arrow" id="modal-scroll-arrow" style="display:none;">
+                <button aria-label="Posunout obsah dolů"><i class="fas fa-chevron-down"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
